@@ -7,7 +7,7 @@ import org.junit.Assert;
 
 public class CartSteps {
 
-    @Steps
+
     CartScreen cartScreen;
 
     public void validateUnidsItem(String unids) {
