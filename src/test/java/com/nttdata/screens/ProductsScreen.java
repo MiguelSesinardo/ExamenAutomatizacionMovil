@@ -18,7 +18,7 @@ public class ProductsScreen extends PageObject{
     @AndroidFindBy(xpath = "com.saucelabs.mydemoapp.android:id/productTV")
     private WebElement lblProducto;
 
-    @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"Displays number of items in your cart\"]")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/titleTV\" and @text=\"Sauce Labs Backpack\"]")
     private WebElement productItem1;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/titleTV\" and @text=\"Sauce Labs Bolt T-Shirt\"]")
@@ -47,7 +47,7 @@ public class ProductsScreen extends PageObject{
                     productItem1.click();
                 }
                 catch (NoSuchElementException e) {
-                    System.out.println("ERROR: no se encontro el elemento Xptah: //android.widget.ImageView[@content-desc=\"Displays number of items in your cart\"]");
+                    System.out.println("ERROR: no se encontro el elemento Xptah: //android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/titleTV\" and @text=\"Sauce Labs Backpack\"]");
                 }
 
                 break;

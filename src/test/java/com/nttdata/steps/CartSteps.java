@@ -1,11 +1,13 @@
 package com.nttdata.steps;
 
 import com.nttdata.screens.CartScreen;
+import net.serenitybdd.annotations.Steps;
 import org.htmlunit.corejs.javascript.regexp.SubString;
 import org.junit.Assert;
 
 public class CartSteps {
 
+    @Steps
     CartScreen cartScreen;
 
     public void validateUnidsItem(String unids) {
